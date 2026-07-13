@@ -1,13 +1,15 @@
-# @hakim/voice
+# @tryhakim/voice
+
+[![npm version](https://img.shields.io/npm/v/@tryhakim/voice.svg)](https://www.npmjs.com/package/@tryhakim/voice)
 
 Official Node.js / TypeScript client for the [Hakim](https://tryhakim.ai) API.
 
-> **Status:** `1.0.0` — stable.
+> **Status:** `1.0.0` — stable, published on npm.
 
 ## Install
 
 ```bash
-npm install @hakim/voice
+npm install @tryhakim/voice
 ```
 
 Requires Node.js **>= 18** (uses native `fetch`, `AbortController`,
@@ -16,7 +18,7 @@ Requires Node.js **>= 18** (uses native `fetch`, `AbortController`,
 ## Quickstart
 
 ```ts
-import { Hakim } from '@hakim/voice';
+import { Hakim } from '@tryhakim/voice';
 import { writeFile } from 'node:fs/promises';
 
 const hakim = new Hakim({
@@ -166,7 +168,7 @@ import {
   HakimError,
   RateLimitError,
   QuotaExceededError,
-} from '@hakim/voice';
+} from '@tryhakim/voice';
 
 try {
   await hakim.audio.speech.create({ ... });

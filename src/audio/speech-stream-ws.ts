@@ -607,7 +607,7 @@ async function resolveSocketCtor(): Promise<SocketCtor> {
         type: 'invalid_request_error',
         code: 'websocket_impl_missing',
         message:
-          'Hakim SDK: realtime TTS requires a WebSocket implementation. On Node 22+ / Bun / Deno / browsers it is built in. On Node 18 / 20, run `npm install ws` alongside @hakim/voice. ' +
+          'Hakim SDK: realtime TTS requires a WebSocket implementation. On Node 22+ / Bun / Deno / browsers it is built in. On Node 18 / 20, run `npm install ws` alongside @tryhakim/voice. ' +
           (err instanceof Error ? `(cause: ${err.message})` : ''),
         status: 0,
         requestId: undefined,

@@ -1,7 +1,7 @@
 /**
- * `@hakim/voice` — official Hakim API client for Node.js.
+ * `@tryhakim/voice` — official Hakim API client for Node.js.
  *
- *   import { Hakim } from '@hakim/voice';
+ *   import { Hakim } from '@tryhakim/voice';
  *
  *   const hakim = new Hakim({ apiKey: process.env.HAKIM_API_KEY });
  *   const speech = await hakim.audio.speech.create({

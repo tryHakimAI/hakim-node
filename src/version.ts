@@ -9,4 +9,4 @@
  * A release script (future) will sync both.
  */
 export const SDK_VERSION = '1.0.0';
-export const SDK_NAME = '@hakim/voice';
+export const SDK_NAME = '@tryhakim/voice';

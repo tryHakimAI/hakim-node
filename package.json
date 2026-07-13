@@ -1,5 +1,5 @@
 {
-  "name": "@hakim/voice",
+  "name": "@tryhakim/voice",
   "version": "1.0.0",
   "description": "Official Hakim API client for Node.js (TTS, STT, voices, usage).",
   "license": "MIT",

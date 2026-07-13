@@ -9,7 +9,7 @@
  * The SDK stays dependency-free. We prefer `globalThis.WebSocket` when
  * present (Node 22+, Bun, Deno, browsers). On Node 18/20 the global
  * isn't there — we dynamically import `ws` at runtime. Consumers on
- * those engines must install `ws` alongside `@hakim/voice`; we surface
+ * those engines must install `ws` alongside `@tryhakim/voice`; we surface
  * a helpful error if it's missing instead of blowing up with an
  * opaque module-not-found trace.
  *
@@ -503,7 +503,7 @@ async function resolveSocketCtor(): Promise<SocketCtor> {
         type: 'invalid_request_error',
         code: 'websocket_impl_missing',
         message:
-          'Hakim SDK: realtime STT requires a WebSocket implementation. On Node 22+ / Bun / Deno / browsers it is built in. On Node 18 / 20, run `npm install ws` alongside @hakim/voice. ' +
+          'Hakim SDK: realtime STT requires a WebSocket implementation. On Node 22+ / Bun / Deno / browsers it is built in. On Node 18 / 20, run `npm install ws` alongside @tryhakim/voice. ' +
           (err instanceof Error ? `(cause: ${err.message})` : ''),
         status: 0,
         requestId: undefined,
