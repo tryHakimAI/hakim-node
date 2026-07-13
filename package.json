@@ -1,0 +1,57 @@
+{
+  "name": "@hakim/voice",
+  "version": "1.0.0",
+  "description": "Official Hakim API client for Node.js (TTS, STT, voices, usage).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rm -rf dist .turbo",
+    "pack:release": "npm run build && npm pack"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryHakimAI/hakim-node.git"
+  },
+  "homepage": "https://tryhakim.ai",
+  "bugs": {
+    "url": "https://github.com/tryHakimAI/hakim-node/issues"
+  },
+  "keywords": [
+    "hakim",
+    "tts",
+    "stt",
+    "speech",
+    "arabic",
+    "voice",
+    "sdk"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.7"
+  }
+}
